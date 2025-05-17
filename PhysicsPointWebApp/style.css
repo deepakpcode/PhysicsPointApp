@@ -1,0 +1,44 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html, body {
+    overflow-x: hidden;
+  }
+ .sidebar-nav {
+  width: 100%;
+  max-width: 270px !important; 
+  top: 56px !important;
+  }
+ .sidebar-link[aria-expanded="true"] .down-icon{
+  transform: rotate(180deg);
+ }
+ .down-icon{
+  transition: all 0.5s;
+ }
+
+  @media(min-width:992px){
+    .offcanvas-backdrop{
+      display: none !important;
+    }
+    .sidebar-nav{
+      transform: none !important;
+      visibility: visible !important;
+    }
+    main{
+      margin-left: 270px !important;
+    }
+  }
+  @media (max-width: 576px) {
+    .nav-tabs {
+      font-size: 14px; /* Smaller text for tabs */
+    }
+    #myTab .nav-item .nav-link{
+      padding: 8px;
+    }
+    table {
+      font-size: 14px; /* Smaller font for table content */
+    }
+  }
+  
